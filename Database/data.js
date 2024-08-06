@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 function connectToDatabase() {
   
   mongoose
-    .connect("mongodb://localhost:27017/Mentor")
+    .connect("mongodb+srv://meha:meha@cluster0.zm7lfvv.mongodb.net/Mentor")
     .then(response => console.log("Database connection successful"))
     .catch((e) => console.log(e));
 }
